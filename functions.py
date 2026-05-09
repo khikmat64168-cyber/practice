@@ -55,3 +55,17 @@ print("result3:", result3)
 
 result4 = give_greet("Jack")
 print("result4:", result4)
+
+
+print("===============   Scope  =================")
+# scope larda priority tushunchasi mavjud.
+b = 100
+
+
+def calculate(a, b):
+    c = a * b
+    print(f"the c value: {c}")
+
+
+# CALL
+calculate(5, 50)
