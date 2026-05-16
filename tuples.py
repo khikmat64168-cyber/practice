@@ -68,4 +68,25 @@ calculate(1, 7, 2, 3)
 
 print("------ ")
 calculate(0, 2, 300)
+
+print("------ ")
 calculate(5, 7)
+
+# **kwargs. dictinory lar orqali hosil bo'lishi
+
+
+def introduce(**kwargs):
+    print(f"the type(**kwargs) value:{type(kwargs)}")
+    print(f"Hi i am {kwargs['name']} and i am {kwargs['age']} years old ")
+
+    pass
+
+# CALL
+
+
+# def give_greet(name, age=22):
+ #   print("give_great is executed")
+  #  return f"Hi {name}, you are {age} years old "
+
+introduce(name="Justin", age=28)
+introduce(name="Matt", age=25)
