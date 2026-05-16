@@ -89,4 +89,15 @@ def introduce(**kwargs):
   #  return f"Hi {name}, you are {age} years old "
 
 introduce(name="Justin", age=28)
-introduce(name="Matt", age=25)
+introduce(name="Matt", age=25, single=True)
+
+
+def greeting(*args, **kwargs):
+    print("*args > ", args)
+    print("**kwargs >", kwargs)
+
+
+greeting(
+    "hi", True, 10,  # shu yergacha tuple ko'rinishida qabul qildirtiradi
+    name="Matt ", age=20  # shu yergacha kwargsga dictionary ko'rinishida qabul qildirtiradi
+)
