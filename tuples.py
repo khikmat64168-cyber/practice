@@ -91,6 +91,8 @@ def introduce(**kwargs):
 introduce(name="Justin", age=28)
 introduce(name="Matt", age=25, single=True)
 
+print("------ ")
+
 
 def greeting(*args, **kwargs):
     print("*args > ", args)
@@ -101,3 +103,14 @@ greeting(
     "hi", True, 10,  # shu yergacha tuple ko'rinishida qabul qildirtiradi
     name="Matt ", age=20  # shu yergacha kwargsga dictionary ko'rinishida qabul qildirtiradi
 )
+
+
+print("----- zip ----- ")
+
+tuple1 = (1, 2, 3, 4)
+tuple2 = ('a', 'b', 'c')
+
+zipped = zip(tuple1, tuple2)
+print("zipped:", zipped)
+result = list(zipped)
+print(f"the result:, {result}")
