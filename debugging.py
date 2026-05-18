@@ -6,6 +6,7 @@
 
 '''
 
+from PIL import Image
 import turtle
 print("=======Python Packages & Core Package")
 
@@ -17,7 +18,7 @@ print("=======Python Packages & Core Package")
 # t.shape("turtle")
 # t.speed(1)
 # t.circle(100)
-
+'''
 screen = turtle.Screen()
 screen.bgcolor("white")
 
@@ -57,7 +58,7 @@ pizza.hideturtle()
 topping.hideturtle()
 
 turtle.mainloop()
-
+'''
 
 print("-----")
 my_file = open("material/message.txt", "r")
@@ -77,3 +78,21 @@ with open("material/message.txt", "r") as your_file:
 
 
 print("DONE")
+
+
+print("=======Package Manager  & External Package ")
+# Package Manager pip  python language bila birga kelib external paclarni o'rnatishga yordam beradi
+'''
+    python > pip  pipenv
+    node > npm yarn
+    PHP > composer
+    MacOs.  > brew
+'''
+
+# External Packages > https://pypi.org/
+
+
+with Image.open("material/logo.png") as img_obj:
+    resized_img = img_obj.resize((200, 200))
+    resized_img.show()
+    resized_img.save("material/sample.png")
