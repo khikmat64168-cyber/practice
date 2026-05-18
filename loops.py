@@ -60,4 +60,4 @@ while True:  # takrorlanish ketma ketligi aniq bo'gan hollarda ishlatamiz
         print(f"You found number in {count} steps")
         break
     else:
-        print(f"Wrong , please find again")
+        print(f"Wrong , please find again23")
