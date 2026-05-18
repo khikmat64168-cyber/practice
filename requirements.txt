@@ -13,6 +13,7 @@ frozenlist==1.8.0
 idna==3.13
 loguru==0.7.3
 multidict==6.7.1
+pillow==12.2.0
 propcache==0.4.1
 pycares==5.0.1
 pycparser==3.0

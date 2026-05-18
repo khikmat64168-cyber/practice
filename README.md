@@ -35,3 +35,16 @@ git pull origin master
 - Array
 - Copmrehession
 - Debugging
+
+## Pip commands:
+
+```
+windows pip | macOspip3
+
+pip list
+pip install pillow
+pip uninstall pillow
+pip show pillow
+pip freeze > requirements.txt
+
+```
